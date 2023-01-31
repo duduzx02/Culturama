@@ -6,4 +6,8 @@
   column-gap: 20px;
 }
 
- 
+ @media (min-width: 720px){
+  .menu{
+    column-gap: 75px;
+  }
+}
