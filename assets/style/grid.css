@@ -14,13 +14,12 @@
 .eventos__item{
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto repeat(2, 1fr) auto;
+  gap: 10px;
   grid-template-areas: 
     "foto foto"
     "nome nome"
     "data data"
     "local btn";
-
 }
 
 .eventos__item img{
@@ -43,11 +42,21 @@
   grid-area: btn;
 }
 
-
 .final{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.agenda__item{
+  display: grid;
+  grid-template-areas:
+  "foto foto"
+  ;
+}
+
+.agenda__item img{
+  grid-area: foto;
 }
 
 @media (min-width: 720px) {
